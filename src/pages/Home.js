@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Header from '../components/Header';
 
 export default class Home extends Component {
     render() {
         return (
-            <div>
-                <h4>Hello from home page</h4>
-            </div>
+            <Header/>
         )
     }
 }
