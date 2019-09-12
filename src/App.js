@@ -2,13 +2,26 @@ import React, {Component} from 'react';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/Home';
+import Recipes from './pages/Recipes';
+import Default from './pages/Default';
+import SingleRecipe from './pages/SingleRecipe';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        Hello from our recipe
-      </div>
+      <Router>
+        <main>
+          {/*navbar*/}
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/recipes" exact component={Recipes}/>
+          <Route path="/recipes/:id" component={SingleRecipe}/>
+          <Route component={Default}/>
+        </Switch>
+        </main>
+      </Router>
     );
   }
 }
