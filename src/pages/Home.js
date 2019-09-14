@@ -6,7 +6,7 @@ export default class Home extends Component {
     render() {
         return (
             <Header title="amazing recipes">
-                <Link to="recipes" className="text-uppercase bt btn-secondary btn-lg mt-3">search recipes</Link>
+                <Link to="recipes" className="text-uppercase bt btn-secondary btn-lg mt-3 nounderline">search recipes</Link>
             </Header>
         )
     }
