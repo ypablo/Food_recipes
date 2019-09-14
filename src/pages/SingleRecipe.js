@@ -14,7 +14,7 @@ export default class SingleRecipe extends Component {
     }
 
     async componentDidMount() {
-        const url = `https://www.food2fork.com/api/get?3667930efb3fa05c230699ddbb59ff66&rId=${this.state.id}`;
+        const url = `https://www.food2fork.com/api/get?key=3667930efb3fa05c230699ddbb59ff66&rId=${this.state.id}`;
         try {
             const response = await fetch(url);
             const responseData = await response.json();
