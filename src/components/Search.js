@@ -8,9 +8,10 @@ export default class Search extends Component {
                 <div className="row">
                     <div className="col-10 mx-auto col-md-8 mt-5 text-center">
                         <h1 className="text-slanted text-capitalize">
-                            search recipes with {""} <strong className="text-orange">
+                            search recipes with {""} 
+                            <strong className="text-orange">
                                 Food2Fork
-                        </strong>
+                            </strong>
                         </h1>
                         <form className="mt-4">
                             <label htmlFor="search" className="text-capitalize">
@@ -24,9 +25,11 @@ export default class Search extends Component {
                                     placeholder="onion, carrots, leek"
                                     value={search}
                                     onChange={handleChange} />
-
                                 <div className="input-group-append">
-                                    <button type="submit" className="input-group-text bg-primary text-white" onClick={this.handleSubmit}>
+                                    <button 
+                                    type="submit" 
+                                    className="input-group-text bg-primary text-white" 
+                                    onClick={handleSubmit}>
                                         <i className="fas fa-search" />
                                     </button>
                                 </div>
@@ -34,7 +37,6 @@ export default class Search extends Component {
                         </form>
                     </div>
                 </div>
-
             </div>
         )
     }
