@@ -12,7 +12,7 @@ export default class Recipes extends Component {
         recipes: recipeData,
         search: "",
         //url: `https://www.food2fork.com/api/search?key=${process.env.REACT_APP_API_KEY}`,
-        url: `https://www.food2fork.com/api/search?key=3667930efb3fa05c230699ddbb59ff66`,
+        url: `https://www.food2fork.com/api/search?key=${REACT_APP_API_KEY}`,
         base_url: `https://www.food2fork.com/api/search?key=${process.env.REACT_APP_API_KEY}`,
         query: '&q=',
         error: ""
