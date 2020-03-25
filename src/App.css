@@ -5,8 +5,8 @@ body {
 .text-slanted {
   font-family: 'Courgette', cursive;
 }
-.text-orange {
-  color: #f15025
+.text-green {
+  color: green;
 }
 .letter-spacing {
   letter-spacing: 0.5rem;
